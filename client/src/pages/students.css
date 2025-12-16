@@ -1,0 +1,130 @@
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    background: #f9fafb;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e3a8a;
+    font-size: 2rem;
+}
+
+/* Form */
+.form {
+    display: flex;
+    color: black;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+
+.form input {
+    flex: 1 1 180px;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.form input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* Button */
+.form button {
+    padding: 10px 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.form button:hover {
+    background: #1e40af;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+    color: black;
+}
+
+table th {
+    background: #2563eb;
+    color: white;
+    font-weight: 600;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Delete button */
+.delete {
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.delete:hover {
+    background: #991b1b;
+}
+
+table button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 6px;
+    background: #16a34a;
+    color: white;
+}
+
+table button:hover {
+    background: #15803d;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .form {
+        flex-direction: column;
+    }
+
+    .form input, .form button {
+        flex: 1 1 100%;
+    }
+
+    table th, table td {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+}
