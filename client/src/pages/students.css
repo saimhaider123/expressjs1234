@@ -1,4 +1,4 @@
-/* Container */
+
 .container {
     max-width: 800px;
     margin: 40px auto;
@@ -8,8 +8,6 @@
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-
-/* Heading */
 h2 {
     text-align: center;
     margin-bottom: 30px;
@@ -17,7 +15,6 @@ h2 {
     font-size: 2rem;
 }
 
-/* Form */
 .form {
     display: flex;
     color: black;
@@ -41,7 +38,6 @@ h2 {
     border-color: #2563eb;
 }
 
-/* Button */
 .form button {
     padding: 10px 20px;
     background: #2563eb;
@@ -57,7 +53,6 @@ h2 {
     background: #1e40af;
 }
 
-/* Table */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -83,8 +78,6 @@ table th {
 table tr:last-child td {
     border-bottom: none;
 }
-
-/* Delete button */
 .delete {
     background: #dc2626;
     color: white;
@@ -113,7 +106,6 @@ table button:hover {
     background: #15803d;
 }
 
-/* Responsive */
 @media (max-width: 600px) {
     .form {
         flex-direction: column;

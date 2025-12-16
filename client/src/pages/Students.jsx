@@ -13,18 +13,17 @@
         });
         const [editId, setEditId] = useState(null);
 
-        // ✅ FETCH
+    
         const fetchStudents = async () => {
             const res = await api.get("/students");
             setStudents(res.data.list);
         };
 
-        // ✅ INPUT
+
         const handleChange = (e) => {
             setForm({ ...form, [e.target.name]: e.target.value });
         };
 
-        // ✅ ADD / UPDATE
         const addStudent = async (e) => {
             e.preventDefault();
             if (!form.name || !form.age || !form.className || !form.rollNo) return;
@@ -42,7 +41,6 @@
             fetchStudents();
         };
 
-        // ✅ EDIT
         const editStudent = (student) => {
             setForm({
                 name: student.name,
@@ -53,7 +51,6 @@
             setEditId(student._id);
         };
 
-        // ✅ DELETE with confirm
         const deleteStudent = async (id) => {
             const result = await Swal.fire({
                 title: "Are you sure?",
